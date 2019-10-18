@@ -1,7 +1,7 @@
 '.text.html.php':
   'Loop':
     'prefix': 'loop'
-    'body': '<?php query_posts("cat= &showposts= "); ?>\n\t<?php if (have_posts()) : ?>\n\t\t<?php while (have_posts()) : the_post(); ?>\n\t\t\t$1\n\t\t<?php endwhile; ?>\n\t<?php endif;?>'
+    'body': '<?php query_posts("cat=$1&showposts=$2"); ?>\n\t<?php if (have_posts()) : ?>\n\t\t<?php while (have_posts()) : the_post(); ?>\n\t\t\t$3\n\t\t<?php endwhile; ?>\n\t<?php endif;?>'
 
   'Header':
     'prefix': 'get_header'
@@ -94,6 +94,14 @@
   'Template-Name':
     'prefix': 'template-name'
     'body': '<?php\n/*\nTemplate Name:$1\n*/\n?>'
+
+  'Permalink':
+    'prefix': 'get_post_permalink'
+    'body': '<?php echo get_post_permalink(); ?>'
+
+  'dynamic sidebar':
+    'prefix': 'dynamic_sidebar'
+    'body': '<?php dynamic_sidebar("$1") ?>'
 
 '.source.css':
   'CSS-Infos':
