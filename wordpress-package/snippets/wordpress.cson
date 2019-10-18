@@ -37,7 +37,7 @@
 
   'Post-Category':
     'prefix': 'the_category'
-    'body': '<?php the_category(); ?>'
+    'body': '<?php the_category($seperator = ", "); ?>'
 
   'Post-Thumbnail-url':
     'prefix': 'the_post_thumbnail_url'
@@ -85,7 +85,7 @@
 
   'Stylesheet-directory':
     'prefix': 'b-stylesheet_directory'
-    'body': '<?php bloginfo("stylesheet_directory") ?>'
+    'body': '<?php bloginfo("stylesheet_directory") ?>/'
 
   'WP-Footer':
     'prefix': 'wp_footer'
