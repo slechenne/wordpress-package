@@ -45,7 +45,7 @@
 
   'Post-Content':
     'prefix': 'the_content'
-    'body': '<?php the_content() ?>'
+    'body': '<?php the_content(); ?>'
 
   'Lang-Attributes':
     'prefix': 'lang-attri'
@@ -85,11 +85,11 @@
 
   'Stylesheet-directory':
     'prefix': 'b-stylesheet_directory'
-    'body': '<?php bloginfo("stylesheet_directory") ?>/'
+    'body': '<?php bloginfo("stylesheet_directory"); ?>/'
 
   'WP-Footer':
     'prefix': 'wp_footer'
-    'body': '<?php wp_footer() ?>'
+    'body': '<?php wp_footer(); ?>'
 
   'Template-Name':
     'prefix': 'template-name'
@@ -101,7 +101,11 @@
 
   'dynamic sidebar':
     'prefix': 'dynamic_sidebar'
-    'body': '<?php dynamic_sidebar("$1") ?>'
+    'body': '<?php dynamic_sidebar("$1"); ?>'
+
+  'Author link':
+    'prefix': 'the_author_link'
+    'body': '<?php the_author_link(); ?>'
 
 '.source.css':
   'CSS-Infos':
