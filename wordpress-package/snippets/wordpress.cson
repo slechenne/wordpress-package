@@ -111,3 +111,6 @@
   'CSS-Infos':
     'prefix': 'css-infos'
     'body': '/* [Master Stylesheet] */\n/*\nTemplate Name: $1\nTemplate Author: $2\nTemplate Author URI: $3\nText Domain: $4\nVersion: - v0$5.0.0\n*/'
+
+
+dies ist ein test
